@@ -1,13 +1,15 @@
-import FirstPerson from './FirstPerson'
-import SecondPerson from './SecondPerson'
+import * as HookState from "./hookstate";
+import * as AgileTs from "./agile-ts";
 
 const App = () => {
   return (
-   <>
-     <FirstPerson />
-     <SecondPerson />
-   </>
+    <div>
+      {/*<HookState.FirstPerson />*/}
+      {/*<HookState.SecondPerson />*/}
+      <AgileTs.FirstPerson />
+      <AgileTs.SecondPerson />
+    </div>
   );
-}
+};
 
-export default App
+export default App;
