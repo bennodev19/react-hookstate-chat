@@ -2,10 +2,11 @@ import ChatBox from "react-custom-chat";
 import { useAgile } from "@agile-ts/react";
 import { store } from "./store";
 
-const personKey = "person1";
+const personKey = "person2";
 
-export const FirstPerson = () => {
-  const messages = useAgile(store.PERSON_1);
+export const SecondPerson = () => {
+  const messages =
+    useAgile(store.MESSAGES.getGroupWithReference(personKey)) ?? [];
 
   return (
     <ChatBox
@@ -14,12 +15,12 @@ export const FirstPerson = () => {
         return message;
       })}
       onSendMessage={(message) =>
-        store.handleSendMessage(message, personKey, "person2")
+        store.handleSendMessage(message, personKey, "person1")
       }
       settings={{
-        position: "left",
-        navColor: "green",
-        navText: "Mycroft",
+        position: "right",
+        navColor: "blue",
+        navText: "Cortana",
         isOpen: true,
       }}
     />

@@ -6,8 +6,8 @@ const App = () => {
     <div>
       {/*<HookState.FirstPerson />*/}
       {/*<HookState.SecondPerson />*/}
-      <AgileTs.FirstPerson />
-      <AgileTs.SecondPerson />
+      <AgileTs.advanced.FirstPerson />
+      <AgileTs.advanced.SecondPerson />
     </div>
   );
 };

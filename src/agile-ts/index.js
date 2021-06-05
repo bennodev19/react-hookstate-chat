@@ -1,2 +1,2 @@
-export * from './FirstPerson';
-export * from './SecondPerson';
+export * as advanced from "./advanced";
+export * as simple from "./simple";
